@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.pdapp.AboutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/rice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/aboutusla"
+            android:layout_width="155dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/aboutusla"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <ImageView
+            android:id="@+id/aboutusmd"
+            android:layout_width="155dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="252dp"
+            android:src="@drawable/aboutusmd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <ImageView
+            android:id="@+id/aboutuspoy"
+            android:layout_width="155dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/aboutuspoy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <ImageView
+            android:id="@+id/aboutuslee"
+            android:layout_width="155dp"
+            android:layout_height="149dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="252dp"
+            android:src="@drawable/aboutuslee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="99dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="32dp"
+            android:text="About Us"
+            android:textColor="#00796B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/aback"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="108dp"
+            android:text="Back"
+            app:backgroundTint="#00796B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="156dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:background="#80FFFFFF"
+            android:text="Louis Angelo del Rosario "
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="156dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="240dp"
+            android:background="#80FFFFFF"
+            android:text="Mark Dave Blancaflor"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="156dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="240dp"
+            android:background="#80FFFFFF"
+            android:text="Eugene Christopher Lee"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="156dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="16dp"
+            android:background="#80FFFFFF"
+            android:text="John Lloyd Ponce"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="136dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="36dp"
+            android:text="Intelegent System"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="139dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="260dp"
+            android:text="System Administrator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="139dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="260dp"
+            android:text="System Administrator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="119dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="36dp"
+            android:text="Intelegent System"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutusla" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

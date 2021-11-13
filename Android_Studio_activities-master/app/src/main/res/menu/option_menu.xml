@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/aboutFragment2"
+        android:icon="@drawable/user"
+        android:title="@string/About" />
+    <item
+        android:id="@+id/AAboutFragment"
+        android:icon="@android:drawable/stat_notify_chat"
+        android:title="@string/AbouttheProject"/>
+
+
+
+</menu>

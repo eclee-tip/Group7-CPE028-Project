@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="visible"
+    tools:context="com.example.pdapp.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="413dp"
+            android:layout_height="733dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/field"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/none"
+            android:layout_width="304dp"
+            android:layout_height="349dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="52dp"
+            android:background="#40FBEAEA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="181dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:src="@drawable/aq"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="154dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="92dp"
+            android:hint="Enter your Email"
+            android:textColor="#000000"
+            android:textColorHint="#B4000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="152dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="168dp"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#B4000000"
+            android:textColorLink="#0C0404"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="246dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="248dp"
+            android:text="Login"
+            app:backgroundTint="#388E3C"
+            app:cornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:rippleColor="#512DA8" />
+
+        <Button
+            android:id="@+id/SignUp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="44dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Sign-Up"
+            android:textColor="#000000"
+            android:textColorHint="#00FFFFFF"
+            android:textStyle="bold"
+            app:backgroundTint="#00F6F6F6"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="173dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="53dp"
+            android:text="Don't have an account  ?"
+            android:textColor="#040404"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
