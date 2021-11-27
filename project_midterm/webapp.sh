@@ -11,9 +11,12 @@ cp -r static/* tempdir/static/.
 echo "FROM python" >> tempdir/Dockerfile
 
 echo "RUN pip install flask" >> tempdir/Dockerfile
-echo "RUN pip install flask_bootstrap" >> tempdir/Dockerfile
-echo "RUN pip install flask_wtf" >> tempdir/Dockerfile
-echo "RUN pip install flask_sqlalchemy" >> tempdir/Dockerfile
+echo "RUN pip install firebase" >> tempdir/Dockerfile
+echo "RUN pip install python-jwt" >> tempdir/Dockerfile
+echo "RUN pip install gcloud" >> tempdir/Dockerfile
+echo "RUN pip install sseclient" >> tempdir/Dockerfile
+echo "RUN pip install pycrypto" >> tempdir/Dockerfile
+echo "RUN pip install requests-toolbelt" >> tempdir/Dockerfile
 echo "COPY  ./static /home/myapp/static/" >> tempdir/Dockerfile
 echo "COPY  ./templates /home/myapp/templates/" >> tempdir/Dockerfile
 echo "COPY  main.py /home/myapp/" >> tempdir/Dockerfile
