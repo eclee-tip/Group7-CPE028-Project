@@ -12,13 +12,17 @@
     <div class="single-banner bg-image-2 bg-parallax fullscreen" data-black-overlay="6" data-velocity=".3">
       <div class="col-md-8 center-pads">
         <div class="card mt-100" style="color:black">
-          <div class="card-body">
+          <div class="card-body">       
+          {% for message in get_flashed_messages() %}  
+            <div class="flash">{{ message }}</div>
+          {% endfor %}       
             <form class="form" method="POST" action="/">
               <h2 class="color-black">Login</h2><br>
               <label class="color-black" for="username">Username</label><br>
               <input type="username" required class="form-control" id="username" name="username" placeholder="Enter username"><br>
               <label class="color-black" for="password">Password</label><br>
               <input type="password" required class="form-control" id="password" name="password" placeholder="Enter password"><br><br>
+            
               <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
             </form>
             <p class="mt-2 color-black">Don't have an account? <a href="/register">Sign-Up</a></p>

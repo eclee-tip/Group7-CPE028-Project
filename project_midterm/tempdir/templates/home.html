@@ -17,7 +17,7 @@
           <li><a href="/developer" class="nav-link px-2 text-white">Developer</a></li>
         </ul>
         <div class="text-end">
-          <a type="button" class="btn btn-outline-light me-2" href="/">Logout</a>
+          <a type="button" class="btn btn-outline-light me-2" href="/logout">Logout</a>
         </div>
 
       </div>
@@ -32,6 +32,7 @@
     <div class="single-banner bg-image-1 bg-parallax fullscreen" data-black-overlay="6" data-velocity=".3">
         <div class="container">
         <div class="row">
+          <h3><strong>Hi {{current_user.user_username}}!</strong></h3>
             <div class="col-xl-12 col-lg-9">
             <div class="single-banner-content">
                 <br>

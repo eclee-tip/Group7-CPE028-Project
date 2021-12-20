@@ -13,6 +13,9 @@
       <div class="col-md-8 center-pads">
         <div class="card mt-100" style="color:black">
           <div class="card-body">
+          {% for message in get_flashed_messages() %}  
+            <div class="flash">{{ message }}</div> 
+          {% endfor %}  
             <form class="form" method="POST">
                 <h2 class="color-black">Register</h2><br>
                 <label class="color-black" for="username">Username</label><br>
@@ -21,7 +24,8 @@
                 <input type="email" required class="form-control" id="email" name="email" placeholder="Enter email"><br>
                 <label class="color-black" for="password">Password</label><br>
                 <input type="password" required class="form-control" id="password" name="password" placeholder="Enter password"><br><br>
-                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register">
+                
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Register"> 
             </form>
             <p class="mt-2 color-black">Already have an account? <a href="/">Sign-In</a></p>
           </div>
